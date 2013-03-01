@@ -28,12 +28,6 @@
 		<module>task-testing-impl</module>
 	</modules>
 
-	<scm>
-		<connection>scm:svn:http://chianti.ucsd.edu/svn/core3/support/trunk</connection>
-		<developerConnection>scm:svn:svn+ssh://grenache.ucsd.edu/cellar/common/svn/core3/support/trunk</developerConnection>
-		<url>http://chianti.ucsd.edu/svn/core3/support/trunk</url>
-	</scm>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -48,4 +42,9 @@
 		</plugins>
 	</build>
 
-</project> 
+	<scm>
+		<connection>scm:git:git://github.com/cytoscape/cytoscape-support.git</connection>
+		<developerConnection>scm:git:git@github.com:cytoscape/cytoscape-support.git</developerConnection>
+		<url>https://github.com/cytoscape/cytoscape-support.git</url>
+	</scm>
+</project>

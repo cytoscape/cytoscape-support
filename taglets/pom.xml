@@ -2,13 +2,13 @@
 	<parent>
 		<artifactId>support-parent</artifactId>
 		<groupId>org.cytoscape</groupId>
-		<version>3.0.0</version>
+		<version>3.1.0</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>taglets</artifactId>
-  <version>3.0.0</version>
+  <version>3.1.0</version>
 	<packaging>jar</packaging>
 
 	<name>Cytoscape Documentation Taglets</name>
@@ -29,6 +29,13 @@
 			<artifactId>mockito-all</artifactId>
 			<version>1.8.1</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.sun</groupId>
+			<artifactId>tools</artifactId>
+			<version>1.4.2</version>
+			<scope>system</scope>
+			<systemPath>${toolsjar}</systemPath>
 		</dependency>
 	</dependencies>
 
@@ -110,7 +117,7 @@
 						<tagletArtifact>
 							<groupId>org.cytoscape</groupId>
 							<artifactId>taglets</artifactId>
-							<version>3.0.0</version>
+							<version>3.1.0</version>
 						</tagletArtifact>
 					</tagletArtifacts>
 				</configuration>
@@ -151,29 +158,28 @@
 
 	<profiles>
 		<profile>
-			<id>default-tools.jar</id>
+			<id>jre-profile</id>
 			<activation>
-				<property>
-					<name>java.vendor</name>
-					<value>Sun Microsystems Inc.</value>
-				</property>
+				<activeByDefault>true</activeByDefault>
+				<file>
+					<exists>${java.home}/../lib/tools.jar</exists>
+				</file>
 			</activation>
-			<dependencies>
-				<dependency>
-					<groupId>com.sun</groupId>
-					<artifactId>tools</artifactId>
-					<version>1.4.2</version>
-					<scope>system</scope>
-					<systemPath>${java.home}/../lib/tools.jar</systemPath>
-				</dependency>
-			</dependencies>
+			<properties>
+				<toolsjar>${java.home}/../lib/tools.jar</toolsjar>
+			</properties>
+		</profile>
+		<profile>
+			<id>mac-profile</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+				<file>
+					<exists>${java.home}/../Classes/classes.jar</exists>
+				</file>
+			</activation>
+			<properties>
+				<toolsjar>${java.home}/../Classes/classes.jar</toolsjar>
+			</properties>
 		</profile>
 	</profiles>
-
-
-  <scm>
-    <connection>scm:svn:http://chianti.ucsd.edu/svn/core3/support/branches/3.0.0-release/taglets</connection>
-    <developerConnection>scm:svn:svn+ssh://grenache.ucsd.edu/cellar/common/svn/core3/support/branches/3.0.0-release/taglets</developerConnection>
-    <url>http://chianti.ucsd.edu/svn/core3/support/branches/3.0.0-release/taglets</url>
-  </scm>
 </project>

@@ -5,17 +5,17 @@
 	<parent>
 		<artifactId>parent</artifactId>
 		<groupId>org.cytoscape</groupId>
-		<version>3.0.0</version>
+		<version>3.1.0</version>
 		<relativePath>../parent</relativePath>
 	</parent>
 
 	<artifactId>support-parent</artifactId>
-	<version>3.0.0</version>
+	<version>3.1.0</version>
 	<packaging>pom</packaging>
 	<name>Cytoscape Support Parent Project POM</name>
 
 	<properties>
-		<cytoscape.api.version>3.0.0</cytoscape.api.version>
+		<cytoscape.api.version>3.1.0</cytoscape.api.version>
 	</properties>
 
 	<modules>
@@ -23,16 +23,9 @@
 		<module>cy-commons-cli</module>
 		<module>integration-test-support</module>
 		<module>launch-framework</module>
-		<module>splash-updater-impl</module>
 		<module>taglets</module>
 		<module>task-testing-impl</module>
 	</modules>
-
-	<scm>
-		<connection>scm:svn:http://chianti.ucsd.edu/svn/core3/support/branches/3.0.0-release</connection>
-		<developerConnection>scm:svn:svn+ssh://grenache.ucsd.edu/cellar/common/svn/core3/support/branches/3.0.0-release</developerConnection>
-		<url>http://chianti.ucsd.edu/svn/core3/support/branches/3.0.0-release</url>
-	</scm>
 
 	<build>
 		<plugins>
@@ -48,4 +41,9 @@
 		</plugins>
 	</build>
 
-</project> 
+	<scm>
+		<connection>scm:git:git://github.com/cytoscape/cytoscape-support.git</connection>
+		<developerConnection>scm:git:git@github.com:cytoscape/cytoscape-support.git</developerConnection>
+		<url>https://github.com/cytoscape/cytoscape-support.git</url>
+	</scm>
+</project>

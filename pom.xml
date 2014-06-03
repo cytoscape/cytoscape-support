@@ -10,12 +10,12 @@
 	</parent>
 
 	<artifactId>support-parent</artifactId>
-	<version>3.1.0.1</version>
+	<version>3.1.1</version>
 	<packaging>pom</packaging>
 	<name>Cytoscape Support Parent Project POM</name>
 
 	<properties>
-		<cytoscape.api.version>3.1.0</cytoscape.api.version>
+		<cytoscape.api.version>${project.version}</cytoscape.api.version>
 	</properties>
 
 	<modules>
@@ -23,7 +23,6 @@
 		<module>cy-commons-cli</module>
 		<module>integration-test-support</module>
 		<module>launch-framework</module>
-		<module>taglets</module>
 		<module>task-testing-impl</module>
 	</modules>
 

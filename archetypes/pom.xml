@@ -16,6 +16,7 @@
 		<module>api-provider-app</module>
 		<module>task-app</module>
 		<module>cyaction-app</module>
+		<module>meta-app</module>
 	</modules>
 
 	<build>

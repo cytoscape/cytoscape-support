@@ -121,7 +121,7 @@
 		<dependency>
 			<groupId>org.cytoscape</groupId>
 			<artifactId>service-api</artifactId>
-			<version>3.4.0</version>
+			<version>3.5.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 

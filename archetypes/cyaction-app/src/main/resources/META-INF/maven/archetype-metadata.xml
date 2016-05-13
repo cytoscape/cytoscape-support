@@ -18,4 +18,9 @@
 			</includes>
 		</fileSet>
 	</fileSets>
+	<requiredProperties>
+                <requiredProperty key="name"> 
+                        <defaultValue>${artifactId}</defaultValue>
+                </requiredProperty>
+	</requiredProperties>
 </archetype-descriptor>

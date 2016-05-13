@@ -9,8 +9,8 @@
 	</parent>
 
 	<groupId>org.cytoscape.archetypes</groupId>
-	<artifactId>cyaction-app</artifactId>
+	<artifactId>meta-app</artifactId>
 	<packaging>maven-archetype</packaging>
-	<name>Cytoscape 3 Archetype - Creates a CyAction (menu item) for desktop application</name>
+	<name>Cytoscape 3 Archetype - Creates a Meta-App to install multiple related apps</name>
 
 </project>

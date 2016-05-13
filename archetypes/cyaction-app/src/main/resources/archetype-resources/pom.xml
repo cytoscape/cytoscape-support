@@ -14,13 +14,7 @@
 	<artifactId>${artifactId}</artifactId>
 	<version>${version}</version>
 
-	#set( $dollar = "$" )
-	#if( $symbolicName.equals($package) )
-	<name>${dollar}{bundle.symbolicName}</name>
-	#else
-	<name>${dollar}{bundle.symbolicName} [${dollar}{bundle.namespace}]</name>
-	#end
-
+	<name>${name}</name>
 	<packaging>bundle</packaging>
 
 	<build>
@@ -127,17 +121,17 @@
 		<dependency>
 			<groupId>org.cytoscape</groupId>
 			<artifactId>service-api</artifactId>
-			<version>3.3.0</version>
+			<version>3.4.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.cytoscape</groupId>
 			<artifactId>swing-application-api</artifactId>
-			<version>3.3.0</version>
+			<version>3.4.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.cytoscape</groupId>
 			<artifactId>session-api</artifactId>
-			<version>3.3.0</version>
+			<version>3.4.0</version>
 		</dependency>
 
 		<!-- Logging -->

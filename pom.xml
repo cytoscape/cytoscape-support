@@ -5,17 +5,17 @@
 	<parent>
 		<artifactId>parent</artifactId>
 		<groupId>org.cytoscape</groupId>
-		<version>3.5.0-SNAPSHOT</version>
+		<version>3.5.0-RC1</version>
 		<relativePath>../parent</relativePath>
 	</parent>
 
 	<artifactId>support-parent</artifactId>
-	<version>3.5.0-SNAPSHOT</version>
+	<version>3.5.0-RC1</version>
 	<packaging>pom</packaging>
 	<name>Cytoscape Support Parent Project POM</name>
 
 	<properties>
-		<cytoscape.api.version>3.5.0-SNAPSHOT</cytoscape.api.version>
+		<cytoscape.api.version>3.5.0-RC1</cytoscape.api.version>
 	</properties>
 
 	<modules>

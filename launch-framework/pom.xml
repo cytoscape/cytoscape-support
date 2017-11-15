@@ -3,13 +3,13 @@
 	<parent>
 		<artifactId>support-parent</artifactId>
 		<groupId>org.cytoscape</groupId>
-		<version>3.5.0</version>
+		<version>3.6.0</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.cytoscape</groupId>
 	<artifactId>launch-framework</artifactId>
-  <version>3.5.0</version>
+  <version>3.6.0</version>
 
 	<name>Cytoscape Launch Framework</name>
 

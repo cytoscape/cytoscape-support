@@ -26,6 +26,7 @@ function testArchetype {
 testArchetype api-provider-app
 testArchetype task-app
 testArchetype cyaction-app
+testArchetype cytoscape-starter-app
 
 cd ..
 

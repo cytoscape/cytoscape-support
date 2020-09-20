@@ -17,6 +17,7 @@
 		<module>task-app</module>
 		<module>cyaction-app</module>
 		<module>meta-app</module>
+		<module>cytoscape-starter-app</module>
 	</modules>
 
 	<build>

@@ -125,17 +125,17 @@
 		<dependency>
 			<groupId>org.cytoscape</groupId>
 			<artifactId>service-api</artifactId>
-			<version>3.10.1</version>
+			<version>3.10.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.cytoscape</groupId>
 			<artifactId>model-api</artifactId>
-			<version>3.10.1</version>
+			<version>3.10.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.cytoscape</groupId>
 			<artifactId>core-task-api</artifactId>
-			<version>3.10.1</version>
+			<version>3.10.2</version>
 		</dependency>
 
 	</dependencies>

@@ -14,7 +14,7 @@
 		#end
 		<bundle.symbolicName>${symbolicName}</bundle.symbolicName>
 		<bundle.namespace>${package}</bundle.namespace>
-		<cytoscape.version>3.8.0</cytoscape.version>
+		<cytoscape.version>3.11.0-SNAPSHOT</cytoscape.version>
 		<osgi.version>4.2.0</osgi.version>
 	</properties>
 

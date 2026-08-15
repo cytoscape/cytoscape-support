@@ -115,6 +115,25 @@
 			<name>Cytoscape Releases</name>
 			<url>https://nrnb-nexus.ucsd.edu/repository/cytoscape_releases/</url>
 		</repository>
+		<!--
+			Needed because this template depends on model-impl, which pulls in
+			third-party artifacts such as cytoscape-temp:parallelcolt that are
+			hosted only here. Without it the generated project fails to resolve
+			them, and Maven 3.8.1+ blocks the plain-http repositories it would
+			otherwise fall back to. The other archetypes depend on api bundles
+			only and do not need this.
+		-->
+		<repository>
+			<id>cytoscape_thirdparty</id>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<name>Cytoscape Third Party</name>
+			<url>https://nrnb-nexus.ucsd.edu/repository/cytoscape_thirdparty/</url>
+		</repository>
 	</repositories>
 
 	<!-- Dependencies needed to compile this project. -->
